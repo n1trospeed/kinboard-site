@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>kinboard — privacy policy</title>
+<style>
+  :root { --paper:#F5E9A8; --ink:#2C3B5A; --chrome:#91824E; --graphite:#6F6A5E; --mred:rgba(190,70,55,.30); }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink);
+         font-family: Georgia, 'Times New Roman', serif; line-height:1.65; }
+  .margin { position:fixed; top:0; bottom:0; left:44px; width:1px; background:var(--mred); }
+  .margin.two { left:47px; }
+  main { max-width:640px; margin:0 auto; padding:64px 24px 96px 72px; }
+  h1 { font-size:1.9rem; font-weight:normal; margin:0 0 2px; }
+  .date { color:var(--chrome); font-family:-apple-system, system-ui, sans-serif; font-size:.8rem; margin-bottom:36px; }
+  h2 { font-size:1.15rem; font-weight:600; margin:34px 0 8px; }
+  p, li { max-width:36em; }
+  ul { padding-left:1.15em; }
+  a { color:var(--ink); }
+  .back { font-family:-apple-system, system-ui, sans-serif; font-size:.9rem; color:var(--chrome); text-decoration:none; }
+</style>
+</head>
+<body>
+<div class="margin"></div><div class="margin two"></div>
+<main>
+  <a class="back" href="../">‹ kinboard</a>
+  <h1>Privacy policy</h1>
+  <div class="date">Effective 4 July 2026</div>
+
+  <p>kinboard is a shared note board for households, built so that we —
+  the people who run it — can read as little as technically possible.
+  This page says plainly what we can and cannot see.</p>
+
+  <h2>What we cannot see</h2>
+  <p>Everything your family writes — notes, page titles, member names — is
+  <strong>end-to-end encrypted on your devices</strong>. The encryption keys
+  are created on your devices and never leave them. Our server stores and
+  forwards only ciphertext: we cannot read your board, and neither can
+  anyone who obtains our server's data.</p>
+
+  <h2>What our server does handle</h2>
+  <ul>
+    <li>Encrypted data blobs (unreadable to us), stored so your devices can sync.</li>
+    <li>Random identifiers for boards and devices, and message sizes and timestamps — needed to route and order sync traffic.</li>
+    <li>Ordinary connection logs (IP addresses), kept briefly for operating the service.</li>
+  </ul>
+  <p>Our sync server currently runs on Amazon Web Services in Singapore.</p>
+
+  <h2>Kin, the optional assistant</h2>
+  <p>Kin is an assistant your family can <em>choose</em> to invite to a board,
+  the same way you'd invite a person. If — and only if — you invite Kin, the
+  pages on that board become readable by the Kin service so it can write its
+  suggestions. To generate suggestions, that content may be processed by our
+  AI provider (Anthropic). It is used solely to produce suggestions for your
+  board — never for advertising, profiling, or training unrelated systems.
+  Boards that never invite Kin remain fully end-to-end encrypted, with no
+  exceptions.</p>
+
+  <h2>What we don't do</h2>
+  <ul>
+    <li>No advertising, and no advertising SDKs.</li>
+    <li>No analytics or tracking in the app.</li>
+    <li>No selling or sharing of data with third parties.</li>
+  </ul>
+
+  <h2>Your data, your exit</h2>
+  <p>Your notes live on your devices; deleting the app removes them from that
+  device. To have a board's encrypted server data deleted, contact us and
+  we'll remove it. You can remove Kin from a board at any time to stop new
+  suggestions.</p>
+
+  <h2>Children</h2>
+  <p>kinboard is intended for adults managing a household and is not directed
+  at children under 13.</p>
+
+  <h2>Changes &amp; contact</h2>
+  <p>If this policy changes, the current version will always live at this
+  address with an updated date. Questions or deletion requests:
+  <a href="mailto:chuachongjin95@gmail.com">chuachongjin95@gmail.com</a>.</p>
+</main>
+</body>
+</html>
