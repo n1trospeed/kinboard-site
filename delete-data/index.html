@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>kinboard — request data deletion</title>
+<style>
+  :root { --paper:#F5E9A8; --ink:#2C3B5A; --chrome:#91824E; --graphite:#6F6A5E; --mred:rgba(190,70,55,.30); }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink);
+         font-family: Georgia, 'Times New Roman', serif; line-height:1.65; }
+  .margin { position:fixed; top:0; bottom:0; left:44px; width:1px; background:var(--mred); }
+  .margin.two { left:47px; }
+  main { max-width:640px; margin:0 auto; padding:64px 24px 96px 72px; }
+  h1 { font-size:1.9rem; font-weight:normal; margin:0 0 28px; }
+  h2 { font-size:1.1rem; font-weight:600; margin:30px 0 6px; }
+  p, li { max-width:36em; }
+  ol, ul { padding-left:1.2em; }
+  a { color:var(--ink); }
+  .back { font-family:-apple-system, system-ui, sans-serif; font-size:.9rem; color:var(--chrome); text-decoration:none; }
+</style>
+</head>
+<body>
+<div class="margin"></div><div class="margin two"></div>
+<main>
+  <a class="back" href="../">‹ kinboard</a>
+  <h1>Request deletion of your kinboard data</h1>
+
+  <p>This page is for users of the <strong>kinboard</strong> app (published by
+  n1trospeed) who want their data deleted from our servers.</p>
+
+  <h2>How to request deletion</h2>
+  <ol>
+    <li>Email <a href="mailto:chongjin@wjohan.com?subject=kinboard%20data%20deletion">chongjin@wjohan.com</a>
+        with the subject "kinboard data deletion".</li>
+    <li>Tell us the name of your board and roughly when it was created, so we
+        can locate the right (encrypted) records.</li>
+    <li>We confirm and delete within <strong>30 days</strong>, and reply when
+        it's done.</li>
+  </ol>
+
+  <h2>What gets deleted</h2>
+  <ul>
+    <li>All of your board's data on our sync server — the end-to-end encrypted
+        note content (which we could never read) and its key-exchange
+        messages.</li>
+    <li>If your board used Kin, the assistant's access and any suggestion
+        material tied to your board.</li>
+  </ul>
+
+  <h2>What is kept, and for how long</h2>
+  <ul>
+    <li>Copies of your notes on your family's own devices are yours — we can't
+        touch those. Deleting the app removes a device's local copy.</li>
+    <li>Routine server connection logs (IP addresses, timestamps) age out
+        automatically within 30 days.</li>
+    <li>Nothing else is retained. We keep no accounts, profiles, or analytics.</li>
+  </ul>
+
+  <p>Questions first? See the <a href="../privacy/">privacy policy</a> or just
+  write to the same address.</p>
+</main>
+</body>
+</html>
